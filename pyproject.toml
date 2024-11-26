@@ -1,0 +1,20 @@
+[project]
+name = "gemini-long-context"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "fastkaggle>=0.0.8",
+    "google-generativeai>=0.8.3",
+    "kagglehub>=0.3.4",
+    "pycaret[analysis,models,parallel]>=3.0.0",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.uv]
+constraint-dependencies = ["kaleido!=0.2.1.post1"]
+
+[dependency-groups]
+dev = ["ipywidgets>=7.8.5", "jupyterlab>=4.2.6"]
