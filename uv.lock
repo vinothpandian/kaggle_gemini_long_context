@@ -887,8 +887,7 @@ dependencies = [
     { name = "dtreeviz" },
     { name = "flask-simplelogin" },
     { name = "graphviz" },
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "jupyter-dash" },
     { name = "numpy" },
     { name = "oyaml" },
@@ -1171,6 +1170,7 @@ dependencies = [
     { name = "featuretools" },
     { name = "google-generativeai" },
     { name = "inflection" },
+    { name = "joblib" },
     { name = "kagglehub" },
     { name = "pycaret", version = "3.0.0", source = { registry = "https://pypi.org/simple" }, extra = ["analysis", "models", "parallel"], marker = "platform_system == 'Darwin'" },
     { name = "pycaret", version = "3.3.2", source = { registry = "https://pypi.org/simple" }, extra = ["analysis", "models", "parallel"], marker = "platform_system != 'Darwin'" },
@@ -1192,6 +1192,7 @@ requires-dist = [
     { name = "featuretools", specifier = ">=1.29.0" },
     { name = "google-generativeai", specifier = ">=0.8.3" },
     { name = "inflection", specifier = ">=0.5.1" },
+    { name = "joblib", specifier = "==1.2.0" },
     { name = "kagglehub", specifier = ">=0.3.4" },
     { name = "pycaret", extras = ["analysis", "models", "parallel"], specifier = ">=3.0.0" },
     { name = "pydantic", specifier = ">=2.9.2" },
@@ -1585,8 +1586,7 @@ name = "imbalanced-learn"
 version = "0.12.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "numpy" },
     { name = "scikit-learn", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "scikit-learn", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
@@ -1654,8 +1654,7 @@ name = "interpret-core"
 version = "0.6.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
@@ -1817,29 +1816,11 @@ wheels = [
 
 [[package]]
 name = "joblib"
-version = "1.3.2"
+version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.13' and platform_system != 'Darwin'",
-    "python_full_version >= '3.13' and platform_system != 'Darwin'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/15/0f/d3b33b9f106dddef461f6df1872b7881321b247f3d255b87f61a7636f7fe/joblib-1.3.2.tar.gz", hash = "sha256:92f865e621e17784e7955080b6d042489e3b8e294949cc44c6eac304f59772b1", size = 1987720 }
+sdist = { url = "https://files.pythonhosted.org/packages/45/dd/a5435a6902d6315241c48a5343e6e6675b007e05d3738ed97a7a47864e53/joblib-1.2.0.tar.gz", hash = "sha256:e1cee4a79e4af22881164f218d4311f60074197fb707e082e803b61f6d137018", size = 313200 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl", hash = "sha256:ef4331c65f239985f3f2220ecc87db222f08fd22097a3dd5698f693875f8cbb9", size = 302207 },
-]
-
-[[package]]
-name = "joblib"
-version = "1.4.2"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.12' and platform_system == 'Darwin'",
-    "python_full_version == '3.12.*' and platform_system == 'Darwin'",
-    "python_full_version >= '3.13' and platform_system == 'Darwin'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/64/33/60135848598c076ce4b231e1b1895170f45fbcaeaa2c9d5e38b04db70c35/joblib-1.4.2.tar.gz", hash = "sha256:2382c5816b2636fbd20a09e0f4e9dad4736765fdfb7dca582943b9c1366b3f0e", size = 2116621 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl", hash = "sha256:06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6", size = 301817 },
+    { url = "https://files.pythonhosted.org/packages/91/d4/3b4c8e5a30604df4c7518c562d4bf0502f2fa29221459226e140cf846512/joblib-1.2.0-py3-none-any.whl", hash = "sha256:091138ed78f800342968c523bdde947e7a305b8594b910a0fea2ab83c3c6d385", size = 297969 },
 ]
 
 [[package]]
@@ -2195,8 +2176,7 @@ name = "kmodes"
 version = "0.12.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "numpy" },
     { name = "scikit-learn", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "scikit-learn", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
@@ -2397,8 +2377,7 @@ name = "mlxtend"
 version = "0.23.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "matplotlib", version = "3.7.5", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
     { name = "matplotlib", version = "3.9.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "numpy" },
@@ -2550,7 +2529,7 @@ version = "3.9.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click", marker = "platform_system == 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib", marker = "platform_system == 'Darwin'" },
     { name = "regex", marker = "platform_system == 'Darwin'" },
     { name = "tqdm", marker = "platform_system == 'Darwin'" },
 ]
@@ -2832,8 +2811,7 @@ name = "phik"
 version = "0.12.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "matplotlib", version = "3.7.5", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
     { name = "matplotlib", version = "3.9.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "numpy" },
@@ -2955,8 +2933,7 @@ version = "2.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cython" },
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "numpy" },
     { name = "packaging" },
     { name = "pandas" },
@@ -3153,7 +3130,7 @@ dependencies = [
     { name = "ipython", marker = "platform_system == 'Darwin'" },
     { name = "ipywidgets", marker = "platform_system == 'Darwin'" },
     { name = "jinja2", marker = "platform_system == 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib", marker = "platform_system == 'Darwin'" },
     { name = "kaleido", marker = "platform_system == 'Darwin'" },
     { name = "lightgbm", marker = "platform_system == 'Darwin'" },
     { name = "markupsafe", marker = "platform_system == 'Darwin'" },
@@ -3225,7 +3202,7 @@ dependencies = [
     { name = "ipython", marker = "platform_system != 'Darwin'" },
     { name = "ipywidgets", marker = "platform_system != 'Darwin'" },
     { name = "jinja2", marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
+    { name = "joblib", marker = "platform_system != 'Darwin'" },
     { name = "kaleido", marker = "platform_system != 'Darwin'" },
     { name = "lightgbm", marker = "platform_system != 'Darwin'" },
     { name = "markupsafe", marker = "platform_system != 'Darwin'" },
@@ -3378,8 +3355,7 @@ name = "pynndescent"
 version = "0.5.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "llvmlite" },
     { name = "numba" },
     { name = "scikit-learn", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
@@ -3409,8 +3385,7 @@ name = "pyod"
 version = "2.0.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "matplotlib", version = "3.7.5", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
     { name = "matplotlib", version = "3.9.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "numba" },
@@ -3934,7 +3909,7 @@ resolution-markers = [
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
 ]
 dependencies = [
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib", marker = "platform_system == 'Darwin'" },
     { name = "numpy", marker = "platform_system == 'Darwin'" },
     { name = "scipy", marker = "platform_system == 'Darwin'" },
     { name = "threadpoolctl", marker = "platform_system == 'Darwin'" },
@@ -3956,7 +3931,7 @@ resolution-markers = [
     "python_full_version >= '3.13' and platform_system != 'Darwin'",
 ]
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
+    { name = "joblib", marker = "platform_system != 'Darwin'" },
     { name = "numpy", marker = "platform_system != 'Darwin'" },
     { name = "scipy", marker = "platform_system != 'Darwin'" },
     { name = "threadpoolctl", marker = "platform_system != 'Darwin'" },
@@ -3997,8 +3972,7 @@ name = "scikit-plot"
 version = "0.3.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "joblib", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib" },
     { name = "matplotlib", version = "3.7.5", source = { registry = "https://pypi.org/simple" }, marker = "platform_system != 'Darwin'" },
     { name = "matplotlib", version = "3.9.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
     { name = "scikit-learn", version = "1.3.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
@@ -4154,7 +4128,7 @@ resolution-markers = [
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
 ]
 dependencies = [
-    { name = "joblib", version = "1.4.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_system == 'Darwin'" },
+    { name = "joblib", marker = "platform_system == 'Darwin'" },
     { name = "numpy", marker = "platform_system == 'Darwin'" },
     { name = "packaging", marker = "platform_system == 'Darwin'" },
     { name = "pandas", marker = "platform_system == 'Darwin'" },
