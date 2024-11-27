@@ -10,6 +10,7 @@ dependencies = [
     "featuretools>=1.29.0",
     "google-generativeai>=0.8.3",
     "inflection>=0.5.1",
+    "joblib==1.2.0",
     "kagglehub>=0.3.4",
     "pycaret[analysis,models,parallel]>=3.0.0",
     "pydantic>=2.9.2",
